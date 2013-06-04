@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script>
+			var blank = [1,2,12,13,14,15,16,25,26,27,28,29,38,39,40,41,42,51,52,53,54,55,64,65,66,67,68,
+			78,79,80,81,92,93,105,117,129,130,131,138,139,142,143,144,145,155,156,157,158,159,168,169,
+			170,171,172,173,181,182,183,184,185,186,187,194,195,196,197,198,199,200,207,208,209,210,212,213,
+			214,220,226,227,239,240,253,221,222,233,234,246,247,248,259,260,261,262,273,274,275,286,287,
+			288,298,299,300,301,312]
+			
+			var red = [3,4,5,17,18,30,31,43,44,56,57,69,70,82,83,106,111,112,113,114,115,116,118,119,
+			120,121,124,125,126,127,128,132,133,134,135,137,140,141,146,147,148,150,151,152,153,154,
+			160,161,163,164,165,166,167,188,276,289,302]
+			
+			var c = [6,7,19,20,32,33,45,46,58,59,71,72,84,85,252,265,266,268,278,279,280,281,291,292,
+			293,294,304,305,306,307,311]
+			
+			var d = [8,9,10,11,21,22,23,24,34,35,36,37,47,48,49,50,97,98,107,108,109,110,122,123,136]
+			
+			var e = [60,61,62,63,73,74,75,76,77,94,95,96,225,238,251,264,277,290,303]
+			
+			var f = [215,216,217,218,219,228,229,230,231,232,241,242,243,244,245,254,255,
+			256,257,258,267]
+			$(document).ready(function() {
+				initial();
+			});
+			
+			function initial(){ 
+				for(var i = 0; i < 24; i++) {
+					$tr = $("<tr>").appendTo("#main");
+					for(var j = 0; j < 13; j++) {
+						$td = $("<td>").attr({"height": "50", "width": "50", "BGCOLOR":"#ffff00", 
+						"title":"524K to 641K","id": 13*i+j+1});
+						$td.html(" ");
+						$td.appendTo($tr);
+					}
+				}
+				
+				for (var z = 0; z < blank.length; z++){
+					changecolor("#" + blank[z]);
+				}
+			  
+				for (var j = 0; j < red.length; j++){
+					changecolor1("#" + red[j]);
+				}
+				
+				for (var k = 0; k < c.length; k++){
+					changecolor2("#" + c[k]);
+				}
+				
+				for (var i = 0; i < d.length; i++){
+					changecolor3("#" + d[i]);
+				}
+				
+				for (var i = 0; i < e.length; i++){
+					changecolor4("#" + e[i]);
+				}
+				 
+				 for (var i = 0; i < f.length; i++){
+					changecolor5("#" + f[i]);
+				}
+				
+				$("#174").css("background-color","#cc3366");
+				$("#175").css("background-color","#cc3366");
+				$("#174").attr({"title": "641K to 728K"});
+				$("#175").attr({"title": "641K to 728K"});
+			}
+			
+			function changecolor(n){
+				$(n).css("background-color","#c0c0c0");
+				$(n).attr({"title": "Not seattle"});
+			}
+			
+			function changecolor1(n){
+				$(n).css("background-color","#FF0000");
+				$(n).attr({"title": "816K and up"});
+			}
+			
+			function changecolor2(n){
+				$(n).css("background-color","#669900");
+				$(n).attr({"title": "350K and below"});
+			}
+			
+			function changecolor3(n){
+				$(n).css("background-color","#99ff00");
+				$(n).attr({"title": "437K to 524K"});
+			}
+			
+			function changecolor4(n){
+				$(n).css("background-color","#CCFF00");
+				$(n).attr({"title": "350K to 473K"});
+			}
+			
+			function changecolor5(n){
+				$(n).css("background-color","#FF6600");
+				$(n).attr({"title": "728K to 816K"});
+			}
+
+		</script>
+	</head>
+	<body>
+	    <table id="main" border=0>
+	        
+	    </table>
+	</body>
+</html>

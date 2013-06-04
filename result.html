@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script>
+			var blank = [1,2,12,13,14,15,16,25,26,27,28,29,38,39,40,41,42,51,52,53,54,55,64,65,66,67,68,
+			78,79,80,81,92,93,105,117,129,130,131,138,139,142,143,144,145,155,156,157,158,159,168,169,
+			170,171,172,173,181,182,183,184,185,186,187,194,195,196,197,198,199,200,207,208,209,210,212,213,
+			214,220,226,227,239,240,253,221,222,233,234,246,247,248,259,260,261,262,273,274,275,286,287,
+			288,298,299,300,301,312]
+			
+			var a = [17,20,23,56,59,62,95,98,101,104,119,135,138,141,175,178,215,218,224,258,255,264,
+			297,294,291]
+			$(document).ready(function() {
+				initial();
+			});
+			
+			function initial(){ 
+				for(var i = 0; i < 24; i++) {
+					$tr = $("<tr>").appendTo("#main");
+					for(var j = 0; j < 13; j++) {
+						$td = $("<td>").attr({"height": "50", "width": "50", "BGCOLOR":"#FFFFCC", 
+						"id": 13*i+j+1});
+						$td.html(" ");
+						$td.appendTo($tr);
+					}
+				}
+				
+			 for (var z = 0; z < blank.length; z++){
+					changecolor("#" + blank[z]);
+				}
+			 for (var z = 0; z < a.length; z++){
+					changecolor1("#" + a[z]);
+				}
+			
+			 $("#17").attr({"title": "The final score is 625!"});
+			 $("#20").attr({"title": "The final score is 755.5!"});
+			 $("#23").attr({"title": "The final score is 868!"});
+			 $("#56").attr({"title": "The final score is 625.5!"});
+			 $("#59").attr({"title": "The final score is 868!"});
+			 $("#62").attr({"title": "The final score is 1434.3!"});
+			 $("#95").attr({"title": "The final score is 841.4!"});
+			 $("#98").attr({"title": "The final score is 3027.25!"});
+			 $("#101").attr({"title": "The final score is 1434.55!"});
+			 $("#104").attr({"title": "The final score is 908.8!"});
+			 $("#119").attr({"title": "The final score is 1602.75!"});
+			 $("#135").attr({"title": "The final score is 3027.25!"});
+			 $("#138").attr({"title": "The final score is 3026.75!"});
+			 $("#141").attr({"title": "The final score is 1600.25!"});
+			 $("#175").attr({"title": "The final score is 2986.75!"});
+			 $("#178").attr({"title": "The final score is 3027.25!"});
+			 $("#215").attr({"title": "The final score is 2935.55!"});
+			 $("#218").attr({"title": "The final score is 1510.3!"});
+			 $("#224").attr({"title": "The final score is 1435.8!"});
+			 $("#255").attr({"title": "The final score is 1510.55!"});
+			 $("#258").attr({"title": "The final score is 1809.8!"});
+			 $("#264").attr({"title": "The final score is 1134.05!"});
+			 $("#291").attr({"title": "The final score is 1067.15!"});
+			 $("#294").attr({"title": "The final score is 1281.5!"});
+			 $("#297").attr({"title": "The final score is 908.8!"});
+			}    
+			
+			function changecolor(n){
+				$(n).css("background-color","#c0c0c0");
+				$(n).attr({"title": "Not Seattle"});
+			}
+			
+			function changecolor1(n){
+				$(n).css("background-color","#FF0000");
+			}
+
+		</script>
+	</head>
+	<body>
+	    <table id="main" border=0>
+	        
+	    </table>
+	</body>
+</html>
