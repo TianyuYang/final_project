@@ -1,3 +1,11 @@
+For may final project, the pdf file "Final Document" is the final version file that should be read. I am not sure if it will
+works on any other computers, thus the file "Final paper" is the Word version of the file. either one is okay. the code for
+html and R are also uploaded. for the Javascripts code, I insert the code inside the html files. All the Html file coud be 
+run on sage. For the R code. I am not sure if it will work on any other computers. It will need the "boot and bootstrap" 
+package for R. 
+
+
+
 final_project
 =============
 
