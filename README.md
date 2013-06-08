@@ -4,6 +4,8 @@ html and R are also uploaded. for the Javascripts code, I insert the code inside
 run on sage. For the R code. I am not sure if it will work on any other computers. It will need the "boot and bootstrap" 
 package for R. 
 
+PS. really enjoy this course. You are awesome!!! This is my favorite math course so far. Thank you!!! 
+
 
 
 final_project
