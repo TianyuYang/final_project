@@ -33,7 +33,7 @@ getRate = function(dat,indices) {
 boot.ci(patch.boot, conf=.95, type=c('norm','basic', 'perc', 'bca'))
 
 result = function(i,j,k){
-  answer = 0.15*i + 0.25*j + 0.4*k
+  answer = 0.35*i - 0.25*j + 0.7*k
   return (answer)
 }
 result(1500,0,1000)
