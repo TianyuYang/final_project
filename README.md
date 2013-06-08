@@ -3,6 +3,8 @@ works on any other computers, thus the file "Final paper" is the Word version of
 html and R are also uploaded. for the Javascripts code, I insert the code inside the html files. All the Html file coud be 
 run on sage. For the R code. I am not sure if it will work on any other computers. It will need the "boot and bootstrap" 
 package for R. 
+PS. I use cloud.sagemat.com to read these files. the pdf shows no no color on it, and word file doest no work well. please 
+download from the github webpage to see the real vision. Thankssss!!!
 
 PS. really enjoy this course. You are awesome!!! This is my favorite math course so far. Thank you!!! 
 
